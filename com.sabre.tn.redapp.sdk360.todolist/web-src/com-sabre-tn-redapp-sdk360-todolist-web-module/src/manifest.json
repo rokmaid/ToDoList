@@ -1,0 +1,14 @@
+{
+  "redappId": "n/a",
+  "bundleSymbolicName": "com.sabre.tn.redapp.sdk360.todolist",
+  "bundleName": "todolist",
+  "name": "com-sabre-tn-redapp-sdk360-todolist-web-module",
+  "contactDetails": {
+    "author": "Rodrigo Kmaid",
+    "email": "Rodrigo.Kmaid@sabre.com",
+    "phone": "111111111111",
+    "companyName": "Sabre Travel Network",
+    "contactPerson": "Rodrigo Kmaid",
+    "website": "n/a"
+  }
+}

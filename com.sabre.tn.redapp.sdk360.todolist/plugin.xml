@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.sabre.edge.dynamo.web.module">
+      <modules>
+         <module
+               id="com-sabre-tn-redapp-sdk360-todolist-web-module"
+               isInternal="false">
+         </module>
+      </modules>
+   </extension>
+   <extension
+         point="com.sabre.edge.dynamo.flow.flowextpoint.registry">
+      <flowExtensionPoint
+            callbackService="com.sabre.tn.redapp.sdk360.todolist.backendservices.IDeleteService:execute"
+            extensionPointId="execute"
+            flowId="dynamo.api.executor">
+      </flowExtensionPoint>
+      <flowExtensionPoint
+            callbackService="com.sabre.tn.redapp.sdk360.todolist.backendservices.IInsertService:execute"
+            extensionPointId="execute"
+            flowId="dynamo.api.executor">
+      </flowExtensionPoint>
+      <flowExtensionPoint
+            callbackService="com.sabre.tn.redapp.sdk360.todolist.backendservices.IGetToDosService:execute"
+            extensionPointId="execute"
+            flowId="dynamo.api.executor">
+      </flowExtensionPoint>
+      <flowExtensionPoint
+            callbackService="com.sabre.tn.redapp.sdk360.todolist.backendservices.IUpdateService:execute"
+            extensionPointId="execute"
+            flowId="dynamo.api.executor">
+      </flowExtensionPoint>
+   </extension>
+   <extension
+         point="com.sabre.edge.redapp.pluginresources">
+      <files>
+         <file
+               override="true"
+               path="DB/ToDo.db">
+         </file>
+      </files>
+   </extension>
+
+</plugin>
